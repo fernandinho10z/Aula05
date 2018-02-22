@@ -1,0 +1,80 @@
+'''
+#manipular arquivo
+def manipular_arquivo (parametros):
+    print (parametros)
+manipular_arquivo('Argumento')]
+
+#manipular arquivo
+def login (usuario,senha):
+    print ('Seu usuario é: %s\n Sua senha é: %s' %(usuario, senha))
+
+if __name__ == '__main__':
+    login ('fernando.henrique', '12345')
+
+#pass continuar a estrutura
+def vendas():
+    pass
+
+def compras():
+    pass
+
+#
+def vendas():
+    produto = 'manga'
+    print(produto)
+
+def compras():
+    produto = 'abacaxi'
+    print (produto)
+
+if __name__== '__main__':
+    vendas()
+    compras()
+
+#utilizar a quantidade, valores ou qualquer string para os produtos 'global' (global no começo do codigo)
+
+quantidade = 10
+
+def vendas():
+    global quantidade
+    print (quantidade)
+    produto = 'manga'
+    print(produto)
+
+def compras():
+    produto = 'abacaxi'
+    print (produto)
+
+if __name__== '__main__':
+    vendas()
+    compras()
+
+#usando 'def' para lista e dicionario
+#transformar varios argumentos em uma tupula, lista '*args'
+def lista(*args):
+    print (args[2]) #busca no arroz
+
+#transformar varios argumentos em dicionario '**kwargs'
+def dicionario(**kwargs):
+    print (kwargs)
+
+if __name__ == '__main__':
+    lista('abacaxi', 'mamao', 'arroz', 'feijao') #*args
+    dicionario (chave='valor', produto='queijo') #**kwargs
+'''
+
+#utilizando o 'return' (marca o fim da função. Tambem pode retornar nada/vazio)
+def entrada(nome):
+    if nome == 'fernando':
+        return 'Pode entrar!'
+    else:
+        return 'Não pode entrar!'
+def menu():
+    nome = input('Digite seu nome: ')
+    return nome
+
+if __name__ == '__main__':
+    x = menu()
+    print (entrada(x))
+
+
